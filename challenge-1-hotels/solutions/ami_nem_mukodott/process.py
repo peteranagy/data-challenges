@@ -4,7 +4,7 @@ import json
 
 input_json = json.load(open('input.json','r'))
 data_args = json.load(open('data.json','r'))
-
+####
 df = pd.read_csv(data_args['staging_folder'] + '/filtered.csv')
 df = df.drop_duplicates(subset=['name'], keep='first')
 
